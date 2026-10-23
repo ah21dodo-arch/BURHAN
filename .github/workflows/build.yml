@@ -21,10 +21,9 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
-          cache: true
 
-      - name: Clean Flutter Cache
-        run: flutter pub cache clean
+      - name: Clean Flutter
+        run: flutter clean
 
       - name: Install dependencies
         run: flutter pub get
