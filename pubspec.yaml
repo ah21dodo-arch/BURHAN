@@ -14,13 +14,13 @@ dependencies:
     sdk: flutter
   intl: any
 
-  # الأذونات (كاميرا، ميكروفون، موقع، بلوتوث، ...)
+  # الأذونات
   permission_handler: ^11.3.1
 
-  # البطارية (قراءات مساندة؛ المصدر الأساسي هو القناة الأصلية Kotlin)
+  # البطارية
   battery_plus: ^6.0.3
 
-  # الحساسات: قراءات حية (accelerometer, gyroscope, magnetometer, ...)
+  # الحساسات
   sensors_plus: ^6.0.1
 
   # معلومات الجهاز والتطبيق
@@ -30,7 +30,7 @@ dependencies:
   # الشبكة
   connectivity_plus: ^6.0.5
 
-  # التخزين المحلي للتقارير واختبارات القراءة/الكتابة
+  # التخزين المحلي
   path_provider: ^2.1.4
   shared_preferences: ^2.3.2
 
@@ -38,15 +38,14 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
-  flutter_launcher_icons: "^0.13.1"
+  flutter_launcher_icons: ^0.13.1
 
 flutter:
   uses-material-design: true
-    assets:
+  assets:
     - assets/icon.png
+
 flutter_launcher_icons:
   image_path: "assets/icon.png"
   android: true
   min_sdk_android: 21
-
-
