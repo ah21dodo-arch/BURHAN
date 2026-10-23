@@ -1,0 +1,52 @@
+name: tuwaiq
+description: "BURHAN (بُرهان) - تطبيق تشخيص أندرويد. اسم الحزمة البرمجي tuwaiq محفوظ للتوافق مع com.example.tuwaiq."
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+
+  # الأذونات (كاميرا، ميكروفون، موقع، بلوتوث، ...)
+  permission_handler: ^11.3.1
+
+  # البطارية (قراءات مساندة؛ المصدر الأساسي هو القناة الأصلية Kotlin)
+  battery_plus: ^6.0.3
+
+  # الحساسات: قراءات حية (accelerometer, gyroscope, magnetometer, ...)
+  sensors_plus: ^6.0.1
+
+  # معلومات الجهاز والتطبيق
+  device_info_plus: ^10.1.2
+  package_info_plus: ^8.0.2
+
+  # الشبكة
+  connectivity_plus: ^6.0.5
+
+  # التخزين المحلي للتقارير واختبارات القراءة/الكتابة
+  path_provider: ^2.1.4
+  shared_preferences: ^2.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: "^0.13.1"
+
+flutter:
+  uses-material-design: true
+    assets:
+    - assets/icon.png
+flutter_launcher_icons:
+  image_path: "assets/icon.png"
+  android: true
+  min_sdk_android: 21
+
+
